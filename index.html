@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- Replace with your name -->
+                <a href="#home">Arjun Shahapure</a>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="animated-text">
+                <h1>Hi, I'm <span class="highlight typing-text">Arjun Shahapure</span></h1>
+                <h2 class="profession">
+                    <span class="text-wrapper">
+                        <span class="letters">An UX/UI Designer</span>
+                        <span class="line"></span>
+                    </span>
+                </h2>
+                <p class="fade-in-up">Designing with Purpose, <span class="highlight-fade">Innovating</span> with Passion.</p>
+            </div>
+            <div class="cta-buttons fade-in-up">
+                <a href="#contact" class="btn primary">Contact Me</a>
+                <a href="#projects" class="btn secondary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section id="course" class="course">
+        <div class="container">
+            <h2 class="section-title">My UI/UX Design Course</h2>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/course.png" alt="UI/UX Course Banner">
+                </div>
+                <div class="course-info">
+                    <h3>Master UI/UX Design</h3>
+                    <p class="course-description">Transform your creative passion into a professional career with my comprehensive UI/UX design course.</p>
+                    
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hands-on Projects</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Industry Tools</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Portfolio Development</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>1-on-1 Mentorship</span>
+                        </div>
+                    </div>
+
+                    <div class="course-cta">
+                        <a href="#contact" class="btn primary">Enroll Now</a>
+                        <a href="https://drive.google.com/file/d/1qM7smSPw7eEvLz2nnDuQM-J_vuExeog2/view?usp=sharing" class="btn secondary">View Syllabus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Popup -->
+    <div class="enrollment-popup" id="enrollmentPopup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Enroll in UI/UX Design Course</h3>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>8766661797</span>
+                    <a href="tel:8766661797" class="btn call-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now
+                    </a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>arjunshahapure@hotmail.com</span>
+                    <a href="mailto:arjunshahapure.s@gmail.com" class="btn email-btn">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </div>
+            </div>
+            <form class="enrollment-form" action="https://formspree.io/f/arjunshahapure.s@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="message" placeholder="Any questions or requirements?" rows="4"></textarea>
+                <button type="submit" class="btn primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- Replace with your about text -->
+                    <p>I'm Arjun Shahapure, a passionate UI/UX Designer and Graphics Designer with a strong foundation in computer engineering. Currently pursuing my BTech at Rajarambapu Institute of Technology, I thrive on designing intuitive, user-friendly, and visually engaging digital experiences.
+
+                        My journey in UI/UX and web development has been driven by my love for problem-solving and creativity. I specialize in prototyping, user research, interaction design, and visual aesthetics, using industry-leading tools like Figma, Adobe XD, and Illustrator.</p>
+                    <p>📩 Let's connect! Whether it's collaborating on a project or sharing ideas, I'm always eager to engage with fellow designers, developers, and innovators.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Replace with your image path -->
+                    <img src="images/Arjunshahapure.png" alt="Arjun Shahapure">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 - Movie Website Frontend -->
+                <div class="project-card featured" data-aos="fade-right">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/Gramsavaari.jpg" alt="Movie Website Frontend">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">App Design</span>
+                            <h3>GramSavaari – Local Booking App</h3>
+                            <p>Designed a multilingual local booking application tailored for rural and semi-urban users. GramSavaari enables easy and intuitive transport booking (especially for vadap vehicles), emphasizing accessibility, scalability, and cost-effectiveness. The interface supports native language options, ensuring inclusivity for a diverse user base.</p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>UX/UI Design</span>
+                                <span>Responsive Design</span>
+                                <span>Mobile App</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/N7XAjS4ypNfZxGNlmK9NDR/5TecgG-GramSavaari?page-id=0%3A1&node-id=155-490&p=f&viewport=369%2C346%2C0.03&t=j6UzgxbgOKolGuXl-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=149%3A334" class="btn primary">View Project</a>
+                                <a href="#" class="btn secondary">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Hotel Management UI -->
+                <div class="project-card" data-aos="fade-left">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/BharatSirPostUI.jpg" alt="Hotel Management UI">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Vibe Coding based Website</span>
+                            <h3>Bharat Sir – Landing Page for Online Workshop</h3>
+                            <p>Designed a high-conversion landing page for Bharat Sir's 90-minute trading webinar, focusing on user retention and engagement. This mobile-first UI highlights key hooks like proven success techniques, countdown urgency, and local language support (Marathi), making it ideal for native users. The color palette enhances clarity, while clean content structure drives action.</p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>UX/UI Design</span>
+                                <span>Responsive Design</span>
+                                <span>Website</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/PiywSnRUA9JcnNH609B4n5?node-id=0-1&t=V1gurosGvs042OMi-6" class="btn primary">View Project</a>
+                                <a href="#" class="btn secondary">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Software Management UI -->
+                <div class="project-card" data-aos="fade-right">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/Shoevault.jpg" alt="Software Management UI">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>ShoeVault – E-commerce Sneaker Store App</h3>
+                            <p>Crafted a modern mobile-first UI for a sneaker and sports shoe store, focusing on user experience and visual appeal. ShoeVault's interface integrates intuitive navigation, swipe-to-buy features, and dynamic product listings. The sleek black/yellow palette adds a bold, premium touch to the retail experience.</p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>UI App Design</span>
+                                <span>E-Commerce</span>
+                                <span>Open Source</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/iLi2tprfHdcgATCoJczTeX?node-id=0-1&t=V1gurosGvs042OMi-6" class="btn primary">View Project</a>
+                                <a href="#" class="btn secondary">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Automatic Lecture Scheduler -->
+                <div class="project-card" data-aos="fade-left">
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/5techG.jpg" alt="Automatic Lecture Scheduler">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3>5TechG – Digital Product Agency Website</h3>
+                            <p>A sleek, responsive website for a tech agency that builds world-class digital products. The site showcases expertise, experience, and services in a clean, modern layout focused on trust and conversion.</p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Web Design</span>
+                                <span>Responsive Layout</span>
+                                <span>Agency Portfolio</span>
+
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/hEmsyAoIrUIQ9L2NwxKEvA?node-id=0-1&t=V1gurosGvs042OMi-6" class="btn primary">View Project</a>
+                                <a href="#" class="btn secondary">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphics Design Examples Section -->
+    <section id="graphics" class="graphics">
+        <div class="container">
+            <h2 class="section-title">Graphics Design Examples</h2>
+            <div class="graphics-grid">
+                <!-- Design Example 1 -->
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="images/Artboard 1.jpg" alt="Design Example 1">
+                        <div class="design-overlay">
+                            <h3>Design Title 1</h3>
+                            <p>Brief description of the design project</p>
+                            <a href="https://drive.google.com/file/d/1H87R20CJY0vHAv3G22wozwKTIrYlgPPD/view?usp=drive_link" class="btn primary">View Full Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Example 2 -->
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="images/Artboard 2.jpg" alt="Design Example 2">
+                        <div class="design-overlay">
+                            <h3>Design Title 2</h3>
+                            <p>Brief description of the design project</p>
+                            <a href="https://drive.google.com/file/d/1idKsZbEPJ7SB7py6WQEgy4iArW64BvD0/view?usp=drive_link" class="btn primary">View Full Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Example 3 -->
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="images/Banner.jpg" alt="Design Example 3">
+                        <div class="design-overlay">
+                            <h3>Design Title 3</h3>
+                            <p>Brief description of the design project</p>
+                            <a href="https://drive.google.com/file/d/1G5YxuJebZ01TImTESr_hdMZD21OUeqg4/view?usp=drive_link" class="btn primary">View Full Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Example 4 -->
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="images/Post-1_HRM.jpg" alt="Design Example 4">
+                        <div class="design-overlay">
+                            <h3>Design Title 4</h3>
+                            <p>Brief description of the design project</p>
+                            <a href="https://drive.google.com/file/d/1lsdph-nF2AP4D2iZMD4GzKONeRoTt_EL/view?usp=drive_link" class="btn primary">View Full Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Example 5 -->
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="images/instagram 3_.jpg" alt="Design Example 5">
+                        <div class="design-overlay">
+                            <h3>Design Title 5</h3>
+                            <p>Brief description of the design project</p>
+                            <a href="https://drive.google.com/file/d/1DjQ_YRZKH3ktd8jeJDKCuVhLPVybIVL7/view?usp=drive_link" class="btn primary">View Full Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Example 6 -->
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="images/Instagram_01.jpg" alt="Design Example 6">
+                        <div class="design-overlay">
+                            <h3>Design Title 6</h3>
+                            <p>Brief description of the design project</p>
+                            <a href="https://drive.google.com/file/d/11q3DzLjVCZWVb8Nrok-lRHPuiWOmCGh9/view?usp=drive_link" class="btn primary">View Full Design</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Design Tools -->
+                <div class="skill-item">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Adobe XD</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Illustrator</span>
+                </div>
+                <!-- UX Methodologies -->
+                <div class="skill-item">
+                    <i class="fas fa-users"></i>
+                    <span>User Research</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Information Architecture</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <span>Interaction Design</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-eye"></i>
+                    <span>Visual Design</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>Usability Heuristics</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cube"></i>
+                    <span>Prototyping Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <!-- Replace with your contact information -->
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>arjunshahapure.s@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 8766661797</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Near Marathi school Bubnal,Maharashtra,India</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Enter your name " required>
+                    <input type="email" placeholder="Add your E-Mail" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> arjunshahapure.s@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 8766661797</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Near Marathi school Bubnal,Maharashtra,India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Arjun Shahapure Portfolio website.</p>
+                <p>Designed with Vibe Coding in Cursor IDE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 
