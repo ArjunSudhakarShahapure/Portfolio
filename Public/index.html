@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Visitor Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .counter {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .visitor-list {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Visitor Counter</h1>
+    <div class="counter">
+        Total Visitors: <span id="visitorCount">0</span>
+    </div>
+    <div class="visitor-list">
+        <h3>Recent Visitors:</h3>
+        <div id="visitorList"></div>
+    </div>
+
+    <script>
+        function updateVisitors() {
+            fetch('/api/visitors')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('visitorCount').textContent = data.totalVisitors;
+                    document.getElementById('visitorList').innerHTML = data.recentVisitors.map(visitor => `<p>${visitor.ip} - ${visitor.time} - ${visitor.page}</p>`).join('');
+                });
+        }
+
+        updateVisitors();
+    </script>
+</body>
+</html> 
