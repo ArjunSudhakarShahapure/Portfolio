@@ -471,11 +471,37 @@
     </script>
 
     <script>
-        fetch('https://api.countapi.xyz/hit/arjun-portfolio/visits')
-          .then(res => res.json())
-          .then(res => {
-            document.getElementById('visitorCount').textContent = res.value;
-          });
+        async function getIP() {
+            try {
+                const res = await fetch('https://api.ipify.org?format=json');
+                const data = await res.json();
+                return data.ip;
+            } catch {
+                return null;
+            }
+        }
+
+        async function updateVisitorCount() {
+            const ip = await getIP();
+            if (!ip) return;
+
+            // Get stored IPs and count from localStorage
+            let storedIPs = JSON.parse(localStorage.getItem('visitorIPs')) || [];
+            let count = parseInt(localStorage.getItem('visitorCount')) || 0;
+
+            // If this IP is not already counted, increment
+            if (!storedIPs.includes(ip)) {
+                storedIPs.push(ip);
+                count++;
+                localStorage.setItem('visitorIPs', JSON.stringify(storedIPs));
+                localStorage.setItem('visitorCount', count);
+            }
+
+            // Show the count
+            document.getElementById('visitorCount').textContent = count;
+        }
+
+        updateVisitorCount();
     </script>
 </body>
 </html> 
