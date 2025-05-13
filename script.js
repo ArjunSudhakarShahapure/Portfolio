@@ -176,3 +176,8 @@ document.querySelector('.floating-counter').addEventListener('click', () => {
         counter.style.transform = 'scale(1)';
     }, 100);
 }); 
+fetch('https://api.countapi.xyz/hit/arjun-portfolio/visits')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('visitorCount').textContent = res.value;
+  }); 
