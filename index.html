@@ -1,121 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Shahapure- Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arjun Shahapure - Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- Add this right after your <body> tag -->
-    <div class="floating-counter">
-        <div class="counter-icon">
-            <i class="fas fa-eye"></i>
+
+  <!-- Hero, About, Skills, Projects, etc. sections remain unchanged -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>arjunshahapure.s@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+91 8766661797</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Near Marathi School Bubnal, Maharashtra, India</p>
+          </div>
         </div>
-        <div class="counter-number">
-            <span id="visitorCount">0</span>
-        </div>
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
     </div>
+  </section>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#home">Arjun Shahapure</a>
-            </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-                <a href="https://www.fiverr.com/s/NN2X5NV" target="_blank" class="fiverr-btn">Fiverr</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <!-- ... (rest of content stays unchanged) ... -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>arjunshahapure.s@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+91 8766661797</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Near Marathi school Bubnal,Maharashtra,India</p>
-                    </div>
-                </div>
-                <form class="contact-form" name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact">
-                    <input type="text" name="name" placeholder="Enter your name " required>
-                    <input type="email" name="email" placeholder="Add your E-Mail" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
-            </div>
+        <div class="footer-section">
+          <h3>Connect With Me</h3>
+          <div class="social-links">
+            <a href="https://github.com/ArjunSudhakarShahapure" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arjunshahapure/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
-    </section>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> arjunshahapure.s@gmail.com</li>
+            <li><i class="fas fa-phone"></i> +91 8766661797</li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Marathi School Bubnal, Maharashtra, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Arjun Shahapure Portfolio</p>
+        <p>Built with ❤️ and Vibe Coding</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <!-- ... (footer content stays unchanged) ... -->
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true, offset: 100 });
+  </script>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
+  <!-- Contact Form Submit Logic -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const name = e.target.name.value;
+      const email = e.target.email.value;
+      const message = e.target.message.value;
+
+      try {
+        const response = await fetch('/.netlify/functions/store-contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message })
         });
-    </script>
 
-    <script>
-        async function getIP() {
-            try {
-                const res = await fetch('https://api.ipify.org?format=json');
-                const data = await res.json();
-                return data.ip;
-            } catch {
-                return null;
-            }
-        }
+        const data = await response.json();
+        alert(data.message || 'Message sent!');
+        e.target.reset();
+      } catch (error) {
+        alert('Failed to send message. Try again.');
+      }
+    });
+  </script>
 
-        async function updateVisitorCount() {
-            const ip = await getIP();
-            if (!ip) return;
-
-            let storedIPs = JSON.parse(localStorage.getItem('visitorIPs')) || [];
-            let count = parseInt(localStorage.getItem('visitorCount')) || 0;
-
-            if (!storedIPs.includes(ip)) {
-                storedIPs.push(ip);
-                count++;
-                localStorage.setItem('visitorIPs', JSON.stringify(storedIPs));
-                localStorage.setItem('visitorCount', count);
-            }
-
-            document.getElementById('visitorCount').textContent = count;
-        }
-
-        updateVisitorCount();
-    </script>
 </body>
 </html>
