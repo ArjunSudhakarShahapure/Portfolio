@@ -66,8 +66,20 @@
     .experience p { text-align: center; }
 
     /* Education */
-    .edu-container { display: flex; flex-direction: column; gap: 20px; }
-    .edu-card { border-left: 4px solid #111; padding: 15px 20px; }
+    .edu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* ✅ Center-align the cards */
+}
+
+    .edu-card {
+  border-left: 4px solid #111;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 600px; /* ✅ Optional: for better center layout */
+}
+
     .edu-card h3 { margin-bottom: 6px; }
 
     /* Contact */
